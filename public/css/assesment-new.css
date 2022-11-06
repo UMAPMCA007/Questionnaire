@@ -1,0 +1,4020 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+/* "Header" card starts here */
+
+header {
+    background-color: #fff;
+    padding: 10px 60px;
+    box-shadow: 0 3px 10px 4px rgb(0 0 0 / 4%);
+}
+
+.parentWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo {
+    /* width: 50px;
+    height: 50px;
+    background-color: black;
+    border-radius: 10px; */
+    display: flex;
+    align-items: center;
+}
+.logo-1{
+    width: 124.8px;
+    /* height: 30px; */
+    margin-right: 10px;
+}
+.logo-2 {
+  margin-left: 5px;
+}
+.logo-3{
+  width: 60px;
+  margin-left: 10px;
+}
+
+.adminProfileWrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.adminName p {
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: -0.04em;
+    line-height: 22px;
+    color: #777471;
+}
+
+.adminProfile {
+    width: 40px;
+    height: 40px;
+    margin-left: 25px;
+    border-radius: 50px;
+    background-color: #ffa450;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+}
+
+.adminProfile p {
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #fffbf7;
+}
+
+/* dropdown */
+.dropbtn {
+    color: #444f60;
+    padding: 16px;
+    font-size: 15px;
+    font-weight: 600;
+    border: none;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    background-color: transparent;
+    font-family: "Nexa Bold",sans-serif;
+    text-transform: uppercase;
+  }
+
+  .dropbtn i{
+      margin-left: 10px;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 40px;
+    min-width: 160px;
+    background-color: #fff;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: #666;
+    font-size: 14px;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {
+      background-color: #00d1b2;
+      color: #fff;
+    }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+    /* min-width: 10rem; */
+  }
+
+/* "Header" css ends here
+^
+^
+^
+^
+*/
+
+#assessments_sect{
+    background-color: #e9ecef4d;
+    /* height: 100vh; */
+}
+
+/* "Navigation" card starts here */
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 60px;
+}
+
+.assessment-progress .navigation{
+    padding: 0 60px;
+    margin-top: -30px;
+    margin-bottom: 30px;
+}
+
+.assesmentWrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+
+.saveProgress {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.assesmentName {
+    /* margin-left: 40px; */
+}
+
+.assesmentName h3 {
+    font-family: "Inter", sans-serif;
+    font-weight: normal;
+    font-size: 24px;
+    letter-spacing: -0.04em;
+    line-height: 29px;
+    color: #121212;
+}
+.saveProgress .button {
+    display: none; /*flex*/
+    margin-left: 40px;
+    padding: 23px 26px;
+    background-color: transparent;
+    border: 1px solid #404040;
+    box-sizing: border-box;
+    border-radius: 200px;
+    cursor: pointer;
+    /* Text Starts here */
+    font-family: "Inter", sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    letter-spacing: 2px;
+    line-height: 15px;
+    color: #121212;
+}
+
+/* PopUp Button */
+.saveProgress .popupButton {
+    display: block; /*flex*/
+    margin-left: 40px;
+    padding: 23px 26px;
+    background-color: transparent;
+    border: 1px solid #404040;
+    box-sizing: border-box;
+    border-radius: 200px;
+    cursor: pointer;
+    /* Text Starts here */
+    font-family: "Inter", sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    letter-spacing: 2px;
+    line-height: 15px;
+    color: #121212;
+}
+
+.questions p {
+    font-family: "Inter", sans-serif;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+    color: #c0bfc6;
+}
+
+/* Line css starts */
+.line {
+    width: 100%;
+    height: 7px;
+    background: #ffead7;
+}
+.progressLine {
+    width: 15%;
+    height: 7px;
+    background: #ffa450;
+}
+/* line css ends here
+^
+^
+^
+^
+*/
+/* "Assesment hero" starts here */
+
+.assesmentHeroWrapper {
+    display: flex;
+}
+
+.numbers {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #e3e3e3;
+    box-sizing: border-box;
+    border-radius: 50px;
+}
+
+.numbers h3 {
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: -0.04em;
+    color: #fff;
+}
+
+.vertLine {
+    height: 380px;
+    width: 1px;
+    background-color: #e3e3e3;
+}
+
+.vertLineWrapper {
+    width: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/********************************************************************************
+QUESTIONS SECTION STARTS
+********************************************************************************/
+
+/* questions 1 & 2 */
+
+.heroQuestions1 {
+    display: flex; /*flex*/
+    width: 60%;
+    padding: 60px 60px;
+    text-align: left;
+    margin: auto;
+}
+/* questions 3 & 4 */
+
+.heroQuestions2 {
+    display: none; /*flex*/
+    width: 60%;
+    padding: 60px 60px;
+}
+/* questions 5 & 6 */
+
+.heroQuestions3 {
+    display: none; /*flex*/
+    width: 60%;
+    padding: 60px 60px;
+}
+/* questions 7 */
+
+.heroQuestions4 {
+    display: none; /*flex*/
+    width: 60%;
+    padding: 60px 60px;
+}
+/* questions 7 */
+
+.heroQuestions5 {
+    display: none; /*flex*/
+    width: 60%;
+    padding: 60px 60px;
+}
+
+/********************************************************************************
+QUESTIONS SECTION ENDS  
+********************************************************************************/
+
+.mainTextWrap {
+    display: block;
+    width: auto;
+    height: auto;
+}
+
+.questionTextWrapper {
+    margin-left: 40px;
+    margin-bottom: 0;
+    /* margin-bottom: 135px; */
+}
+.questionText{
+    margin-bottom: 50px;
+}
+.questionText p {
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 34px;
+    letter-spacing: -0.04em;
+    color: #353535;
+    margin-top: 0px;
+    text-align: left;
+}
+
+.btn {
+    background: #fff;
+    border: 1px solid #00d1b2;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 10px;
+    margin-right: 30px;
+    margin: 7px;
+    /* Text */
+    /* font-family: Inter; */
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 28px;
+    color: #00d1b2;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #00d1b2;
+    border: 1px solid #fff;
+    /* box-sizing: border-box;
+    border-radius: 5px;
+    padding: 10;
+    margin-right: 30px;
+    margin: 10px;
+    
+    font-family: "Inter", sans-serif;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 28px; */
+    color: #fff;
+}
+
+.btn2 {
+    background: #fbfafe;
+    border: 1px solid #e4e4e4;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 21px 30px;
+    margin-right: 30px;
+    margin: 10px;
+    /* Text */
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 28px;
+    color: #000000; 
+}
+
+.btn2:hover {
+    background: #343434;
+    border: 1px solid #ffa450;
+    color: #fafafa;
+}
+
+.btnWrap{
+    display: flex;
+}
+
+.btnWrap1 p{
+    font-size: 14px;
+    /* margin-top: -5px; */
+}
+
+/* .buttonBottom {
+  margin-top: 30px;
+} */
+
+/**********************************************************************************
+PROGRESSWRAP-NONE FOR MOBILE SCREEN
+***********************************************************************************/
+
+.heroProgressWrap {
+    width: 40%;
+    height: 100%;
+    background-color: #1d1d1d;
+    /* display: none; none, for mobile screen */
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+}
+
+/**********************************************************************************
+PROGRESSWRAP-NONE FOR WEB
+***********************************************************************************/
+/* Secondary Progress Bar for Mobile Screen */
+.heroProgressWrap-1 {
+    width: 100%;
+    background-color: #1d1d1d;
+    display: none;/*flex, for mobile screen */
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+}
+
+/* Timer */
+.timerBased{
+    display: block; /*none for 1st Assessment Page*/
+    color: #FFFFFF;
+    margin-top: -15px;
+    margin-bottom: 40px;
+}
+.timerBased span{
+    color: #f3a1b3;
+}
+
+.heroProgress {
+    padding: 60px 60px;
+}
+
+.assesmentProgress {
+    margin-bottom: 50px;
+}
+
+.assesmentProgress h3 {
+    font-family: "Inter", sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 15px;
+    letter-spacing: 2px;
+    color: #fafafa;
+}
+
+.viewInstructions{
+    margin-top: 200px;
+}
+
+.viewInstructions label{
+    /* margin-top: 200px; */
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 15px;
+    letter-spacing: 2px;
+    color: #ffa450;
+    cursor: pointer;
+}
+
+/* .progressCircle {
+  width: 174.3px;
+  height: 174.3px;
+  border-radius: 100px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.progressCircle h3 {
+  font-family: "Inter", sans-serif;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 48px;
+  color: #1d1d1d;
+} */
+
+.progressCircleWrap {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.progressCircle {
+    width: 174.3px;
+    height: 174.3px;
+    border-radius: 100px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.progressCircle h3 {
+    font-family: "Inter", sans-serif;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 48px;
+    color: #1d1d1d;
+}
+
+.questions2 {
+    margin-bottom: 50px;
+}
+
+.questions2 p {
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: -0.04em;
+    color: #fafafa;
+}
+
+.commentProgress {
+    margin-bottom: 50px;
+}
+
+.commentProgress p {
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: -2px;
+    color: #fafafa;
+}
+
+.btn1{
+    background: #fbfafe;
+    border: 1px solid #e4e4e4;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 10px 30px;
+    margin-right: 30px;
+    margin: 10px;
+    /* Text */
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    color: #000000; 
+}
+
+.btn1:hover {
+    background: #343434;
+    border: 1px solid #ffa450;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 10px 30px;
+    margin-right: 30px;
+    margin: 10px;
+    /* Text */
+    font-family: "Inter", sans-serif;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 28px;
+    color: #fafafa;
+}
+
+.checkbtn{
+    width: 28px;
+    height: 28px;
+    border-radius: 100px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+}
+
+/* Image Based Questions */
+.imageBasedQuestion1{
+    height: 230px;
+    width: 230px;
+/*    background-image: url(/media/img/Screenshot\ 2021-09-01\ at\ 12.57\ 1.png);*/
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.imageBasedQuestion2{
+    margin-bottom: 20px;
+    height: 230px;
+    width: 230px;
+/*    background-image: url(/media/img/Screenshot\ 2021-09-01\ at\ 12.59\ 1.png);*/
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.imageBasedQuestion3{
+    margin-bottom: 20px;
+    height: 230px;
+    width: 230px;
+/*    background-image: url(/media/img/Screenshot\ 2021-09-01\ at\ 2.18\ 3.png);*/
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.imageBasedAnswers1{
+    height: 200px;
+    width: 150px;
+/*    background-image: url(/media/img/Screenshot\ 2021-09-01\ at\ 1.00\ 3.png);*/
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.imageBasedAnswers2{
+    height: 200px;
+    width: 150px;
+/*    background-image: url(/media/img/Screenshot\ 2021-09-01\ at\ 2.18\ 3\ \(1\).png);*/
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+
+/*Popup starts*/
+.modal-content {
+    opacity: 0;
+    position: fixed;
+    width: 544px;
+    height: auto;
+    left: 27%;
+    top: 7%;  
+    padding-bottom: 20px;
+    background: #FAFAFA;
+    border-radius: 10px;
+    text-align: center;
+    padding: 15px;
+    padding-top: 50px;
+    z-index: -1;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.modal-content-1 {
+    opacity: 0;
+    position: fixed;
+    width: 650px;
+    height: auto;
+    left: 24%;
+    top: 2%;
+    background: #FAFAFA;
+    border-radius: 10px;
+    text-align: center;
+    /* padding: 15px; */
+    padding-top: 0px;
+    padding-bottom: 20px;
+    z-index: -1;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.modal-backdrop {
+    opacity: 0;
+    position: fixed;
+    padding: 15px;
+    padding-top: 50px;
+    z-index: -1;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.modal-backdrop {
+    left: 0;
+    top: 0;
+    height: 100%;
+    height: 100vh;
+    width: 100%;
+    width: 100vw;
+}
+
+#modal-toggle {
+    display: none;
+}
+
+#modal-toggle-1 {
+    display: none;
+}
+
+#modal-toggle:checked ~ .modal-backdrop {
+    opacity: 0.8;
+    background-color: #000000;
+    z-index: 998;
+    transform: scale(1);
+}
+
+#modal-toggle-1:checked ~ .modal-backdrop {
+    opacity: 0.8;
+    background-color: #000000;
+    z-index: 998;
+    transform: scale(1);
+}
+
+#modal-toggle:checked ~ .modal-content {
+    opacity: 1;
+    background-color: #fff;
+    overflow-y: auto;
+    overflow-x: hidden;
+    pointer-events: auto;
+    cursor: auto;
+    z-index: 999;
+    transform: translateX(0%);
+}
+
+#modal-toggle-1:checked ~ .modal-content-1 {
+    opacity: 1;
+    background-color: #fff;
+    overflow-y: auto;
+    overflow-x: hidden;
+    pointer-events: auto;
+    cursor: auto;
+    z-index: 999;
+    transform: translateX(0%);
+}
+
+.blueTop{
+    background-color: #464BCF;
+    width: 100%;
+    height: 62.14px;
+    margin-bottom: 60px;
+}
+
+.tabs {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px 0;
+    /* text-align: center;
+       justify-content: center; */
+}
+
+.tabs-1 {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px 0;
+    text-align: center;
+    justify-content: center;
+}
+
+.tabs > .radio {
+    display: none;
+}
+
+.tabs-1 > .radio {
+    display: none;
+}
+
+.tabs > .radio:checked + .table-2 + .tabs-content {
+    display: block;
+}
+
+.tabs .tabs-content {
+    width: 100%;
+    display: block;
+}
+
+.tabs-1>p{
+    margin: auto;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.tabs-1>p>span{
+    color: #FFA450;
+}
+
+.tabs>img{
+    position: absolute;
+    left: 215px;
+    top: 30px;
+    width: 143px;
+    height: 163px;
+    margin-top: 28px;
+}
+
+.close-btn {
+    margin-top: 5px;
+    display: inline-block;
+    cursor: pointer;
+    position: absolute;
+    top: 25px;
+    right: 40px;
+}
+
+.close-btn svg line {
+    stroke-width: 1px;
+    stroke: #000000;
+}
+
+.tabs> .table-2{
+    margin-top: 195px;
+}
+
+.tabs > .table-2 span {
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 48px;
+    color: #1A202C;
+    margin-left: 66px;
+    letter-spacing: -1px;
+}
+
+.tabs-1 > .table-2 span {
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 48px;
+    color: #1A202C;
+    letter-spacing: -1px;
+}
+
+.tabs-1 > .table-2{
+    margin-bottom: 25px;
+}
+
+.tabs .tabs-content>p{
+    font-family: Inter;
+    font-size: 17px;
+    line-height: 26px;
+}
+
+.tabs > .tabs-content input[type="submit"] {
+    padding: 15px 0;
+    margin-top: 30px;
+    width: 336px;
+    height: 55px;
+    background: #414141;
+    color: #FFFFFF;
+    border: 1px solid #D3D3D3;
+    box-sizing: border-box;
+    border-radius: 200px;
+    font-family: Inter;
+    font-size: 15px;
+    line-height: 15px;
+    cursor: pointer;
+    letter-spacing: 2px;
+}
+
+.paragraph-1{
+    margin-top: 40px;
+}
+
+.instructions{
+    line-height: 28px;
+}
+
+.instructionButton{
+    width: 346px;
+    height: 55px;
+    background: #414141;
+    border: 1px solid #D3D3D3;
+    box-sizing: border-box;
+    border-radius: 200px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 15px;
+    letter-spacing: 2px;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+/************************************************************************************************************************************
+                                                ACHIEVEMENT INSTRUCTIONS ENGLISH
+*************************************************************************************************************************************/
+.viewInstructions-2{
+    /* display: none; ****************************************************************************** */
+    margin-top: 10px;
+    text-align: center;
+}
+/*.viewInstructions-2 label{
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 15px;
+  letter-spacing: 2px;
+  color: #ffa450;
+  cursor: pointer;
+} */
+.modal-content-2 {
+    opacity: 0;
+    position: fixed;
+    width: 650px;
+    height: 620px;
+    left: 24%;
+    top: 2%;  
+    background: #FAFAFA;
+    border-radius: 10px;
+    text-align: center;
+    /* padding: 15px; */
+    padding-top: 0px;
+    padding-bottom: 20px;
+    z-index: -1;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+.modal-backdrop-2 {
+    opacity: 0;
+    position: fixed;
+    padding: 15px;
+    padding-top: 50px;
+    z-index: -1;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.modal-backdrop-2 {
+    left: 0;
+    top: 0;
+    height: 100%;
+    height: 100vh;
+    width: 100%;
+    width: 100vw;
+}
+#modal-toggle-2 {
+    display: none;
+}
+#modal-toggle-2:checked ~ .modal-backdrop-2 {
+    opacity: 0.8;
+    background-color: #000000;
+    z-index: 998;
+    transform: scale(1);
+}
+#modal-toggle-2:checked ~ .modal-content-2 {
+    opacity: 1;
+    background-color: #fff;
+    overflow-y: auto;
+    overflow-x: hidden;
+    pointer-events: auto;
+    cursor: auto;
+    z-index: 999;
+    transform: translateX(0%);
+}
+.tabs-2 {
+    display: block;
+    flex-wrap: wrap;
+    margin: 10px 0;
+    text-align: center;
+    justify-content: center;
+}
+.tabs-2 > .radio {
+    display: none;
+}
+.tabs-2>p{
+    margin: auto;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.tabs-2>p>span{
+    color: #FFA450;
+}
+.tabs-2 > .table-2 span {
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 48px;
+    color: #1A202C;
+    letter-spacing: -1px;
+}
+
+.tabs-2 .table-2{
+    margin-bottom: 25px;
+}
+.paragraph-2{
+    margin-top: 40px;
+}
+.para-title{
+    text-decoration: underline;
+    font-weight: 500;
+}
+.para-2{
+    text-align: left;
+    padding-left: 60px;
+}
+
+/************************************************************************************************************************************
+                                                    ACHIEVEMENTS MALAYALAM
+*************************************************************************************************************************************/
+.modal-content-3 {
+    opacity: 0;
+    position: fixed;
+    width: 650px;
+    height: 620px;
+    left: 24%;
+    top: 2%;  
+    background: #FAFAFA;
+    border-radius: 10px;
+    text-align: center;
+    /* padding: 15px; */
+    padding-top: 0px;
+    padding-bottom: 20px;
+    z-index: -1;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+.modal-backdrop-3 {
+    opacity: 0;
+    position: fixed;
+    padding: 15px;
+    padding-top: 50px;
+    z-index: -1;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.modal-backdrop-3 {
+    left: 0;
+    top: 0;
+    height: 100%;
+    height: 100vh;
+    width: 100%;
+    width: 100vw;
+}
+#modal-toggle-3 {
+    display: none;
+}
+#modal-toggle-3:checked ~ .modal-backdrop-3 {
+    opacity: 0.8;
+    background-color: #000000;
+    z-index: 998;
+    transform: scale(1);
+}
+#modal-toggle-3:checked ~ .modal-content-3 {
+    opacity: 1;
+    background-color: #fff;
+    overflow-y: auto;
+    overflow-x: hidden;
+    pointer-events: auto;
+    cursor: auto;
+    z-index: 999;
+    transform: translateX(0%);
+}
+.tabs-3 {
+    display: block;
+    flex-wrap: wrap;
+    margin: 10px 0;
+    text-align: center;
+    justify-content: center;
+}
+.tabs-3 > .radio {
+    display: none;
+}
+.tabs-3>p{
+    margin: auto;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.tabs-3>p>span{
+    color: #FFA450;
+}
+.tabs-3 > .table-2 span {
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 48px;
+    color: #1A202C;
+    letter-spacing: -1px;
+}
+
+.tabs-3 .table-2{
+    margin-bottom: 25px;
+}
+.paragraph-3{
+    margin-top: 40px;
+}
+
+/************************************************************************************************************************************
+                                                    SUBJECTS ENGLISH
+*************************************************************************************************************************************/
+.modal-content-4 {
+    opacity: 0;
+    position: fixed;
+    width: 650px;
+    height: 620px;
+    left: 24%;
+    top: 2%;  
+    background: #FAFAFA;
+    border-radius: 10px;
+    text-align: center;
+    /* padding: 15px; */
+    padding-top: 0px;
+    padding-bottom: 20px;
+    z-index: -1;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+.modal-backdrop-4 {
+    opacity: 0;
+    position: fixed;
+    padding: 15px;
+    padding-top: 50px;
+    z-index: -1;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.modal-backdrop-4 {
+    left: 0;
+    top: 0;
+    height: 100%;
+    height: 100vh;
+    width: 100%;
+    width: 100vw;
+}
+#modal-toggle-4 {
+    display: none;
+}
+#modal-toggle-4:checked ~ .modal-backdrop-4 {
+    opacity: 0.8;
+    background-color: #000000;
+    z-index: 998;
+    transform: scale(1);
+}
+#modal-toggle-4:checked ~ .modal-content-4 {
+    opacity: 1;
+    background-color: #fff;
+    overflow-y: auto;
+    overflow-x: hidden;
+    pointer-events: auto;
+    cursor: auto;
+    z-index: 999;
+    transform: translateX(0%);
+}
+.tabs-4 {
+    display: block;
+    flex-wrap: wrap;
+    margin: 10px 0;
+    text-align: center;
+    justify-content: center;
+}
+.tabs-4 > .radio {
+    display: none;
+}
+.tabs-4>p{
+    margin: auto;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.tabs-4>p>span{
+    color: #FFA450;
+}
+.tabs-4 > .table-2 span {
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 48px;
+    color: #1A202C;
+    letter-spacing: -1px;
+}
+
+.tabs-4 .table-2{
+    margin-bottom: 25px;
+}
+.paragraph-4{
+    margin-top: 40px;
+}
+.para-4{
+    text-align: left;
+    padding-left: 100px;
+}
+
+
+/************************************************************************************************************************************
+                                                    SUBJECTS MALAYALAM
+*************************************************************************************************************************************/
+.modal-content-5 {
+    opacity: 0;
+    position: fixed;
+    width: 650px;
+    height: 620px;
+    left: 24%;
+    top: 2%;  
+    background: #FAFAFA;
+    border-radius: 10px;
+    text-align: center;
+    /* padding: 15px; */
+    padding-top: 0px;
+    padding-bottom: 20px;
+    z-index: -1;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+.modal-backdrop-5 {
+    opacity: 0;
+    position: fixed;
+    padding: 15px;
+    padding-top: 50px;
+    z-index: -1;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.modal-backdrop-5 {
+    left: 0;
+    top: 0;
+    height: 100%;
+    height: 100vh;
+    width: 100%;
+    width: 100vw;
+}
+#modal-toggle-5 {
+    display: none;
+}
+#modal-toggle-5:checked ~ .modal-backdrop-5 {
+    opacity: 0.8;
+    background-color: #000000;
+    z-index: 998;
+    transform: scale(1);
+}
+#modal-toggle-5:checked ~ .modal-content-5 {
+    opacity: 1;
+    background-color: #fff;
+    overflow-y: auto;
+    overflow-x: hidden;
+    pointer-events: auto;
+    cursor: auto;
+    z-index: 999;
+    transform: translateX(0%);
+}
+.tabs-5 {
+    display: block;
+    flex-wrap: wrap;
+    margin: 10px 0;
+    text-align: center;
+    justify-content: center;
+}
+.tabs-5 > .radio {
+    display: none;
+}
+.tabs-5>p{
+    margin: auto;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.tabs-5>p>span{
+    color: #FFA450;
+}
+.tabs-5 > .table-2 span {
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 48px;
+    color: #1A202C;
+    letter-spacing: -1px;
+}
+
+.tabs-5 .table-2{
+    margin-bottom: 25px;
+}
+.paragraph-5{
+    margin-top: 40px;
+}
+
+
+/************************************************************************************************************************************
+                                                    ACTIVITIES ENGLISH
+*************************************************************************************************************************************/
+.modal-content-6 {
+    opacity: 0;
+    position: fixed;
+    width: 650px;
+    height: 620px;
+    left: 24%;
+    top: 2%;  
+    background: #FAFAFA;
+    border-radius: 10px;
+    text-align: center;
+    /* padding: 15px; */
+    padding-top: 0px;
+    padding-bottom: 20px;
+    z-index: -1;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+.modal-backdrop-6 {
+    opacity: 0;
+    position: fixed;
+    padding: 15px;
+    padding-top: 50px;
+    z-index: -1;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.modal-backdrop-6 {
+    left: 0;
+    top: 0;
+    height: 100%;
+    height: 100vh;
+    width: 100%;
+    width: 100vw;
+}
+#modal-toggle-6 {
+    display: none;
+}
+#modal-toggle-6:checked ~ .modal-backdrop-6 {
+    opacity: 0.8;
+    background-color: #000000;
+    z-index: 998;
+    transform: scale(1);
+}
+#modal-toggle-6:checked ~ .modal-content-6 {
+    opacity: 1;
+    background-color: #fff;
+    overflow-y: auto;
+    overflow-x: hidden;
+    pointer-events: auto;
+    cursor: auto;
+    z-index: 999;
+    transform: translateX(0%);
+}
+.tabs-6 {
+    display: block;
+    flex-wrap: wrap;
+    margin: 10px 0;
+    text-align: center;
+    justify-content: center;
+}
+.tabs-6 > .radio {
+    display: none;
+}
+.tabs-6>p{
+    margin: auto;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.tabs-6>p>span{
+    color: #FFA450;
+}
+.tabs-6 > .table-2 span {
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 48px;
+    color: #1A202C;
+    letter-spacing: -1px;
+}
+
+.tabs-6 .table-2{
+    margin-bottom: 25px;
+}
+.paragraph-6{
+    margin-top: 40px;
+}
+.para-6{
+    text-align: left;
+    padding-left: 60px;
+}
+
+
+/************************************************************************************************************************************
+                                                    ACTIVITIES MALAYALAM
+*************************************************************************************************************************************/
+.modal-content-7 {
+    opacity: 0;
+    position: fixed;
+    width: 650px;
+    height: 620px;
+    left: 24%;
+    top: 2%;  
+    background: #FAFAFA;
+    border-radius: 10px;
+    text-align: center;
+    /* padding: 15px; */
+    padding-top: 0px;
+    padding-bottom: 20px;
+    z-index: -1;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+.modal-backdrop-7 {
+    opacity: 0;
+    position: fixed;
+    padding: 15px;
+    padding-top: 50px;
+    z-index: -1;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.modal-backdrop-7 {
+    left: 0;
+    top: 0;
+    height: 100%;
+    height: 100vh;
+    width: 100%;
+    width: 100vw;
+}
+#modal-toggle-7 {
+    display: none;
+}
+#modal-toggle-7:checked ~ .modal-backdrop-7 {
+    opacity: 0.8;
+    background-color: #000000;
+    z-index: 998;
+    transform: scale(1);
+}
+#modal-toggle-7:checked ~ .modal-content-7 {
+    opacity: 1;
+    background-color: #fff;
+    overflow-y: auto;
+    overflow-x: hidden;
+    pointer-events: auto;
+    cursor: auto;
+    z-index: 999;
+    transform: translateX(0%);
+}
+.tabs-7 {
+    display: block;
+    flex-wrap: wrap;
+    margin: 10px 0;
+    text-align: center;
+    justify-content: center;
+}
+.tabs-7 > .radio {
+    display: none;
+}
+.tabs-7>p{
+    margin: auto;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.tabs-7>p>span{
+    color: #FFA450;
+}
+.tabs-7 > .table-2 span {
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 48px;
+    color: #1A202C;
+    letter-spacing: -1px;
+}
+
+.tabs-7 .table-2{
+    margin-bottom: 25px;
+}
+.paragraph-7{
+    margin-top: 40px;
+}
+
+/************************************************************************************************************************************
+                                                    CHARACTERISTICS ENGLISH
+*************************************************************************************************************************************/
+.modal-content-8 {
+    opacity: 0;
+    position: fixed;
+    width: 650px;
+    height: 620px;
+    left: 24%;
+    top: 2%;  
+    background: #FAFAFA;
+    border-radius: 10px;
+    text-align: center;
+    /* padding: 15px; */
+    padding-top: 0px;
+    padding-bottom: 20px;
+    z-index: -1;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+.modal-backdrop-8 {
+    opacity: 0;
+    position: fixed;
+    padding: 15px;
+    padding-top: 50px;
+    z-index: -1;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.modal-backdrop-8 {
+    left: 0;
+    top: 0;
+    height: 100%;
+    height: 100vh;
+    width: 100%;
+    width: 100vw;
+}
+#modal-toggle-8 {
+    display: none;
+}
+#modal-toggle-8:checked ~ .modal-backdrop-8 {
+    opacity: 0.8;
+    background-color: #000000;
+    z-index: 998;
+    transform: scale(1);
+}
+#modal-toggle-8:checked ~ .modal-content-8 {
+    opacity: 1;
+    background-color: #fff;
+    overflow-y: auto;
+    overflow-x: hidden;
+    pointer-events: auto;
+    cursor: auto;
+    z-index: 999;
+    transform: translateX(0%);
+}
+.tabs-8 {
+    display: block;
+    flex-wrap: wrap;
+    margin: 10px 0;
+    text-align: center;
+    justify-content: center;
+}
+.tabs-8 > .radio {
+    display: none;
+}
+.tabs-8>p{
+    margin: auto;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.tabs-8>p>span{
+    color: #FFA450;
+}
+.tabs-8 > .table-2 span {
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 48px;
+    color: #1A202C;
+    letter-spacing: -1px;
+}
+
+.tabs-8 .table-2{
+    margin-bottom: 25px;
+}
+.paragraph-8{
+    margin-top: 40px;
+}
+
+
+/************************************************************************************************************************************
+                                                    CHARACTERISTICS MALAYALAM
+*************************************************************************************************************************************/
+.modal-content-29 {
+    opacity: 0;
+    position: fixed;
+    width: 650px;
+    height: 620px;
+    left: 24%;
+    top: 2%;  
+    background: #FAFAFA;
+    border-radius: 10px;
+    text-align: center;
+    /* padding: 15px; */
+    padding-top: 0px;
+    padding-bottom: 20px;
+    z-index: -1;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+.modal-backdrop-29 {
+    opacity: 0;
+    position: fixed;
+    padding: 15px;
+    padding-top: 50px;
+    z-index: -1;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.modal-backdrop-29 {
+    left: 0;
+    top: 0;
+    height: 100%;
+    height: 100vh;
+    width: 100%;
+    width: 100vw;
+}
+#modal-toggle-29 {
+    display: none;
+}
+#modal-toggle-29:checked ~ .modal-backdrop-29 {
+    opacity: 0.8;
+    background-color: #000000;
+    z-index: 998;
+    transform: scale(1);
+}
+#modal-toggle-29:checked ~ .modal-content-29 {
+    opacity: 1;
+    background-color: #fff;
+    overflow-y: auto;
+    overflow-x: hidden;
+    pointer-events: auto;
+    cursor: auto;
+    z-index: 999;
+    transform: translateX(0%);
+}
+.tabs-29 {
+    display: block;
+    flex-wrap: wrap;
+    margin: 10px 0;
+    text-align: center;
+    justify-content: center;
+}
+.tabs-29 > .radio {
+    display: none;
+}
+.tabs-29>p{
+    margin: auto;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.tabs-29>p>span{
+    color: #FFA450;
+}
+.tabs-29 > .table-2 span {
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 48px;
+    color: #1A202C;
+    letter-spacing: -1px;
+}
+
+.tabs-29 .table-2{
+    margin-bottom: 25px;
+}
+.paragraph-29{
+    margin-top: 30px;
+}
+.para-29{
+    text-align: left;
+    padding-left: 50px;
+}
+
+
+/************************************************************************************************************************************
+                                                    PERSONALITY ENGLISH
+*************************************************************************************************************************************/
+.modal-content-9 {
+    opacity: 0;
+    position: fixed;
+    width: 650px;
+    height: 620px;
+    left: 24%;
+    top: 2%;  
+    background: #FAFAFA;
+    border-radius: 10px;
+    text-align: center;
+    /* padding: 15px; */
+    padding-top: 0px;
+    padding-bottom: 20px;
+    z-index: -1;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+.modal-backdrop-9 {
+    opacity: 0;
+    position: fixed;
+    padding: 15px;
+    padding-top: 50px;
+    z-index: -1;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.modal-backdrop-9 {
+    left: 0;
+    top: 0;
+    height: 100%;
+    height: 100vh;
+    width: 100%;
+    width: 100vw;
+}
+#modal-toggle-9 {
+    display: none;
+}
+#modal-toggle-9:checked ~ .modal-backdrop-9 {
+    opacity: 0.8;
+    background-color: #000000;
+    z-index: 998;
+    transform: scale(1);
+}
+#modal-toggle-9:checked ~ .modal-content-9 {
+    opacity: 1;
+    background-color: #fff;
+    overflow-y: auto;
+    overflow-x: hidden;
+    pointer-events: auto;
+    cursor: auto;
+    z-index: 999;
+    transform: translateX(0%);
+}
+.tabs-9 {
+    display: block;
+    flex-wrap: wrap;
+    margin: 10px 0;
+    text-align: center;
+    justify-content: center;
+}
+.tabs-9 > .radio {
+    display: none;
+}
+.tabs-9>p{
+    margin: auto;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.tabs-9>p>span{
+    color: #FFA450;
+}
+.tabs-9 > .table-2 span {
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 48px;
+    color: #1A202C;
+    letter-spacing: -1px;
+}
+
+.tabs-9 .table-2{
+    margin-bottom: 25px;
+}
+.paragraph-9{
+    margin-top: 40px;
+}
+
+
+/************************************************************************************************************************************
+                                                    WHAT I VALUE ENGLISH
+*************************************************************************************************************************************/
+.modal-content-10 {
+    opacity: 0;
+    position: fixed;
+    width: 650px;
+    height: 620px;
+    left: 24%;
+    top: 2%;  
+    background: #FAFAFA;
+    border-radius: 10px;
+    text-align: center;
+    /* padding: 15px; */
+    padding-top: 0px;
+    padding-bottom: 20px;
+    z-index: -1;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+.modal-backdrop-10 {
+    opacity: 0;
+    position: fixed;
+    padding: 15px;
+    padding-top: 50px;
+    z-index: -1;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.modal-backdrop-10 {
+    left: 0;
+    top: 0;
+    height: 100%;
+    height: 100vh;
+    width: 100%;
+    width: 100vw;
+}
+#modal-toggle-10 {
+    display: none;
+}
+#modal-toggle-10:checked ~ .modal-backdrop-10 {
+    opacity: 0.8;
+    background-color: #000000;
+    z-index: 998;
+    transform: scale(1);
+}
+#modal-toggle-10:checked ~ .modal-content-10 {
+    opacity: 1;
+    background-color: #fff;
+    overflow-y: auto;
+    overflow-x: hidden;
+    pointer-events: auto;
+    cursor: auto;
+    z-index: 999;
+    transform: translateX(0%);
+}
+.tabs-10 {
+    display: block;
+    flex-wrap: wrap;
+    margin: 10px 0;
+    text-align: center;
+    justify-content: center;
+}
+.tabs-10 > .radio {
+    display: none;
+}
+.tabs-10>p{
+    margin: auto;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.tabs-10>p>span{
+    color: #FFA450;
+}
+.tabs-10 > .table-2 span {
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 48px;
+    color: #1A202C;
+    letter-spacing: -1px;
+}
+
+.tabs-10 .table-2{
+    margin-bottom: 25px;
+}
+.paragraph-10{
+    margin-top: 40px;
+}
+
+
+/************************************************************************************************************************************
+                                                    WHAT I VALUE MALAYALAM
+*************************************************************************************************************************************/
+.modal-content-11 {
+    opacity: 0;
+    position: fixed;
+    width: 650px;
+    height: 620px;
+    left: 24%;
+    top: 2%;  
+    background: #FAFAFA;
+    border-radius: 10px;
+    text-align: center;
+    /* padding: 15px; */
+    padding-top: 0px;
+    z-index: -1;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+.modal-backdrop-11 {
+    opacity: 0;
+    position: fixed;
+    padding: 15px;
+    padding-top: 50px;
+    z-index: -1;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.modal-backdrop-11 {
+    left: 0;
+    top: 0;
+    height: 100%;
+    height: 100vh;
+    width: 100%;
+    width: 100vw;
+}
+#modal-toggle-11 {
+    display: none;
+}
+#modal-toggle-11:checked ~ .modal-backdrop-11 {
+    opacity: 0.8;
+    background-color: #000000;
+    z-index: 998;
+    transform: scale(1);
+}
+#modal-toggle-11:checked ~ .modal-content-11 {
+    opacity: 1;
+    background-color: #fff;
+    overflow-y: auto;
+    overflow-x: hidden;
+    pointer-events: auto;
+    cursor: auto;
+    z-index: 999;
+    transform: translateX(0%);
+}
+.tabs-11 {
+    display: block;
+    flex-wrap: wrap;
+    margin: 10px 0;
+    text-align: center;
+    justify-content: center;
+}
+.tabs-11 > .radio {
+    display: none;
+}
+.tabs-11>p{
+    margin: auto;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.tabs-11>p>span{
+    color: #FFA450;
+}
+.tabs-11 > .table-2 span {
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 48px;
+    color: #1A202C;
+    letter-spacing: -1px;
+}
+
+.tabs-11 .table-2{
+    margin-bottom: 25px;
+}
+.paragraph-11{
+    margin-top: 40px;
+}
+
+
+/************************************************************************************************************************************
+                                                  SUBJECTS I WOULD LIKE TO STUDY ENGLISH
+*************************************************************************************************************************************/
+.modal-content-12 {
+    opacity: 0;
+    position: fixed;
+    width: 650px;
+    height: 620px;
+    left: 24%;
+    top: 2%;  
+    background: #FAFAFA;
+    border-radius: 10px;
+    text-align: center;
+    /* padding: 15px; */
+    padding-top: 0px;
+    padding-bottom: 20px;
+    z-index: -1;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+.modal-backdrop-12 {
+    opacity: 0;
+    position: fixed;
+    padding: 15px;
+    padding-top: 50px;
+    z-index: -1;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.modal-backdrop-12 {
+    left: 0;
+    top: 0;
+    height: 100%;
+    height: 100vh;
+    width: 100%;
+    width: 100vw;
+}
+#modal-toggle-12 {
+    display: none;
+}
+#modal-toggle-12:checked ~ .modal-backdrop-12 {
+    opacity: 0.8;
+    background-color: #000000;
+    z-index: 998;
+    transform: scale(1);
+}
+#modal-toggle-12:checked ~ .modal-content-12 {
+    opacity: 1;
+    background-color: #fff;
+    overflow-y: auto;
+    overflow-x: hidden;
+    pointer-events: auto;
+    cursor: auto;
+    z-index: 999;
+    transform: translateX(0%);
+}
+.tabs-12 {
+    display: block;
+    flex-wrap: wrap;
+    margin: 10px 0;
+    text-align: center;
+    justify-content: center;
+}
+.tabs-12 > .radio {
+    display: none;
+}
+.tabs-12>p{
+    margin: auto;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.tabs-12>p>span{
+    color: #FFA450;
+}
+.tabs-12 > .table-2 span {
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 48px;
+    color: #1A202C;
+    letter-spacing: -1px;
+}
+
+.tabs-12 .table-2{
+    margin-bottom: 25px;
+}
+.paragraph-12{
+    margin-top: 40px;
+}
+
+
+/************************************************************************************************************************************
+                                            SUBJECTS I WOULD LIKE TO STUDY MALAYALAM
+*************************************************************************************************************************************/
+.modal-content-13 {
+    opacity: 0;
+    position: fixed;
+    width: 650px;
+    height: 620px;
+    left: 24%;
+    top: 2%;  
+    background: #FAFAFA;
+    border-radius: 10px;
+    text-align: center;
+    /* padding: 15px; */
+    padding-top: 0px;
+    padding-bottom: 20px;
+    z-index: -1;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+.modal-backdrop-13 {
+    opacity: 0;
+    position: fixed;
+    padding: 15px;
+    padding-top: 50px;
+    z-index: -1;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.modal-backdrop-13 {
+    left: 0;
+    top: 0;
+    height: 100%;
+    height: 100vh;
+    width: 100%;
+    width: 100vw;
+}
+#modal-toggle-13 {
+    display: none;
+}
+#modal-toggle-13:checked ~ .modal-backdrop-13 {
+    opacity: 0.8;
+    background-color: #000000;
+    z-index: 998;
+    transform: scale(1);
+}
+#modal-toggle-13:checked ~ .modal-content-13 {
+    opacity: 1;
+    background-color: #fff;
+    overflow-y: auto;
+    overflow-x: hidden;
+    pointer-events: auto;
+    cursor: auto;
+    z-index: 999;
+    transform: translateX(0%);
+}
+.tabs-13 {
+    display: block;
+    flex-wrap: wrap;
+    margin: 10px 0;
+    text-align: center;
+    justify-content: center;
+}
+.tabs-13 > .radio {
+    display: none;
+}
+.tabs-13>p{
+    margin: auto;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.tabs-13>p>span{
+    color: #FFA450;
+}
+.tabs-13 > .table-2 span {
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 48px;
+    color: #1A202C;
+    letter-spacing: -1px;
+}
+
+.tabs-13 .table-2{
+    margin-bottom: 25px;
+}
+.paragraph-13{
+    margin-top: 40px;
+}
+
+/************************************************************************************************************************************
+                                                  OCCUPATIONS ENGLISH
+*************************************************************************************************************************************/
+.modal-content-14 {
+    opacity: 0;
+    position: fixed;
+    width: 650px;
+    height: 620px;
+    left: 24%;
+    top: 2%;  
+    background: #FAFAFA;
+    border-radius: 10px;
+    text-align: center;
+    /* padding: 15px; */
+    padding-top: 0px;
+    padding-bottom: 20px;
+    z-index: -1;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+.modal-backdrop-14 {
+    opacity: 0;
+    position: fixed;
+    padding: 15px;
+    padding-top: 50px;
+    z-index: -1;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.modal-backdrop-14 {
+    left: 0;
+    top: 0;
+    height: 100%;
+    height: 100vh;
+    width: 100%;
+    width: 100vw;
+}
+#modal-toggle-14 {
+    display: none;
+}
+#modal-toggle-14:checked ~ .modal-backdrop-14 {
+    opacity: 0.8;
+    background-color: #000000;
+    z-index: 998;
+    transform: scale(1);
+}
+#modal-toggle-14:checked ~ .modal-content-14 {
+    opacity: 1;
+    background-color: #fff;
+    overflow-y: auto;
+    overflow-x: hidden;
+    pointer-events: auto;
+    cursor: auto;
+    z-index: 999;
+    transform: translateX(0%);
+}
+.tabs-14 {
+    display: block;
+    flex-wrap: wrap;
+    margin: 10px 0;
+    text-align: center;
+    justify-content: center;
+}
+.tabs-14 > .radio {
+    display: none;
+}
+.tabs-14>p{
+    margin: auto;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.tabs-14>p>span{
+    color: #FFA450;
+}
+.tabs-14 > .table-2 span {
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 48px;
+    color: #1A202C;
+    letter-spacing: -1px;
+}
+
+.tabs-14 .table-2{
+    margin-bottom: 25px;
+}
+.paragraph-14{
+    margin-top: 40px;
+}
+
+
+/************************************************************************************************************************************
+                                                  ACTIVITIES ENGLISH
+*************************************************************************************************************************************/
+.modal-content-15 {
+    opacity: 0;
+    position: fixed;
+    width: 650px;
+    height: 620px;
+    left: 24%;
+    top: 2%;  
+    background: #FAFAFA;
+    border-radius: 10px;
+    text-align: center;
+    /* padding: 15px; */
+    padding-top: 0px;
+    padding-bottom: 20px;
+    z-index: -1;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+.modal-backdrop-15 {
+    opacity: 0;
+    position: fixed;
+    padding: 15px;
+    padding-top: 50px;
+    z-index: -1;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.modal-backdrop-15 {
+    left: 0;
+    top: 0;
+    height: 100%;
+    height: 100vh;
+    width: 100%;
+    width: 100vw;
+}
+#modal-toggle-15 {
+    display: none;
+}
+#modal-toggle-15:checked ~ .modal-backdrop-15 {
+    opacity: 0.8;
+    background-color: #000000;
+    z-index: 998;
+    transform: scale(1);
+}
+#modal-toggle-15:checked ~ .modal-content-15 {
+    opacity: 1;
+    background-color: #fff;
+    overflow-y: auto;
+    overflow-x: hidden;
+    pointer-events: auto;
+    cursor: auto;
+    z-index: 999;
+    transform: translateX(0%);
+}
+.tabs-15 {
+    display: block;
+    flex-wrap: wrap;
+    margin: 10px 0;
+    text-align: center;
+    justify-content: center;
+}
+.tabs-15 > .radio {
+    display: none;
+}
+.tabs-15>p{
+    margin: auto;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.tabs-15>p>span{
+    color: #FFA450;
+}
+.tabs-15 > .table-2 span {
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 48px;
+    color: #1A202C;
+    letter-spacing: -1px;
+}
+
+.tabs-15 .table-2{
+    margin-bottom: 25px;
+}
+.paragraph-15{
+    margin-top: 40px;
+}
+
+
+/************************************************************************************************************************************
+                                                  LOGICAL APTITUDE ENGLISH
+*************************************************************************************************************************************/
+.modal-content-16 {
+    opacity: 0;
+    position: fixed;
+    width: 650px;
+    height: 620px;
+    left: 24%;
+    top: 2%;  
+    background: #FAFAFA;
+    border-radius: 10px;
+    text-align: center;
+    /* padding: 15px; */
+    padding-top: 0px;
+    z-index: -1;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+.modal-backdrop-16 {
+    opacity: 0;
+    position: fixed;
+    padding: 15px;
+    padding-top: 50px;
+    z-index: -1;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.modal-backdrop-16 {
+    left: 0;
+    top: 0;
+    height: 100%;
+    height: 100vh;
+    width: 100%;
+    width: 100vw;
+}
+#modal-toggle-16 {
+    display: none;
+}
+#modal-toggle-16:checked ~ .modal-backdrop-16 {
+    opacity: 0.8;
+    background-color: #000000;
+    z-index: 998;
+    transform: scale(1);
+}
+#modal-toggle-16:checked ~ .modal-content-16 {
+    opacity: 1;
+    background-color: #fff;
+    overflow-y: auto;
+    overflow-x: hidden;
+    pointer-events: auto;
+    cursor: auto;
+    z-index: 999;
+    transform: translateX(0%);
+}
+.tabs-16 {
+    display: block;
+    flex-wrap: wrap;
+    margin: 10px 0;
+    text-align: center;
+    justify-content: center;
+}
+.tabs-16 > .radio {
+    display: none;
+}
+.tabs-16>p{
+    margin: auto;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.tabs-16>p>span{
+    color: #FFA450;
+}
+.tabs-16 > .table-2 span {
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 48px;
+    color: #1A202C;
+    letter-spacing: -1px;
+}
+
+.tabs-16 .table-2{
+    margin-bottom: 25px;
+}
+.paragraph-16{
+    margin-top: 40px;
+}
+
+
+/************************************************************************************************************************************
+                                                  LOGICAL APTITUDE MALAYALAM
+*************************************************************************************************************************************/
+.modal-content-25 {
+    opacity: 0;
+    position: fixed;
+    width: 650px;
+    height: 620px;
+    left: 24%;
+    top: 2%;  
+    background: #FAFAFA;
+    border-radius: 10px;
+    text-align: center;
+    /* padding: 15px; */
+    padding-top: 0px;
+    z-index: -1;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+.modal-backdrop-25 {
+    opacity: 0;
+    position: fixed;
+    padding: 15px;
+    padding-top: 50px;
+    z-index: -1;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.modal-backdrop-25 {
+    left: 0;
+    top: 0;
+    height: 100%;
+    height: 100vh;
+    width: 100%;
+    width: 100vw;
+}
+#modal-toggle-25 {
+    display: none;
+}
+#modal-toggle-25:checked ~ .modal-backdrop-25 {
+    opacity: 0.8;
+    background-color: #000000;
+    z-index: 998;
+    transform: scale(1);
+}
+#modal-toggle-25:checked ~ .modal-content-25 {
+    opacity: 1;
+    background-color: #fff;
+    overflow-y: auto;
+    overflow-x: hidden;
+    pointer-events: auto;
+    cursor: auto;
+    z-index: 999;
+    transform: translateX(0%);
+}
+.tabs-25 {
+    display: block;
+    flex-wrap: wrap;
+    margin: 10px 0;
+    text-align: center;
+    justify-content: center;
+}
+.tabs-25 > .radio {
+    display: none;
+}
+.tabs-25>p{
+    margin: auto;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.tabs-25>p>span{
+    color: #FFA450;
+}
+.tabs-25 > .table-2 span {
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 48px;
+    color: #1A202C;
+    letter-spacing: -1px;
+}
+
+.tabs-25 .table-2{
+    margin-bottom: 25px;
+}
+.paragraph-25{
+    margin-top: 40px;
+}
+
+
+/************************************************************************************************************************************
+                                                  MECHANICAL APTITUDE ENGLISH
+*************************************************************************************************************************************/
+.modal-content-17 {
+    opacity: 0;
+    position: fixed;
+    width: 650px;
+    height: 620px;
+    left: 24%;
+    top: 2%;  
+    background: #FAFAFA;
+    border-radius: 10px;
+    text-align: center;
+    /* padding: 15px; */
+    padding-top: 0px;
+    z-index: -1;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+.modal-backdrop-17 {
+    opacity: 0;
+    position: fixed;
+    padding: 15px;
+    padding-top: 50px;
+    z-index: -1;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.modal-backdrop-17 {
+    left: 0;
+    top: 0;
+    height: 100%;
+    height: 100vh;
+    width: 100%;
+    width: 100vw;
+}
+#modal-toggle-17 {
+    display: none;
+}
+#modal-toggle-17:checked ~ .modal-backdrop-17 {
+    opacity: 0.8;
+    background-color: #000000;
+    z-index: 998;
+    transform: scale(1);
+}
+#modal-toggle-17:checked ~ .modal-content-17 {
+    opacity: 1;
+    background-color: #fff;
+    overflow-y: auto;
+    overflow-x: hidden;
+    pointer-events: auto;
+    cursor: auto;
+    z-index: 999;
+    transform: translateX(0%);
+}
+.tabs-17 {
+    display: block;
+    flex-wrap: wrap;
+    margin: 10px 0;
+    text-align: center;
+    justify-content: center;
+}
+.tabs-17 > .radio {
+    display: none;
+}
+.tabs-17>p{
+    margin: auto;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.tabs-17>p>span{
+    color: #FFA450;
+}
+.tabs-17 > .table-2 span {
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 48px;
+    color: #1A202C;
+    letter-spacing: -1px;
+}
+
+.tabs-17 .table-2{
+    margin-bottom: 25px;
+}
+.paragraph-17{
+    margin-top: 40px;
+}
+
+/************************************************************************************************************************************
+                                                  MECHANICAL APTITUDE MALAYALAM
+*************************************************************************************************************************************/
+.modal-content-18 {
+    opacity: 0;
+    position: fixed;
+    width: 650px;
+    height: 620px;
+    left: 24%;
+    top: 2%;  
+    background: #FAFAFA;
+    border-radius: 10px;
+    text-align: center;
+    /* padding: 15px; */
+    padding-top: 0px;
+    z-index: -1;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+.modal-backdrop-18 {
+    opacity: 0;
+    position: fixed;
+    padding: 15px;
+    padding-top: 50px;
+    z-index: -1;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.modal-backdrop-18 {
+    left: 0;
+    top: 0;
+    height: 100%;
+    height: 100vh;
+    width: 100%;
+    width: 100vw;
+}
+#modal-toggle-18 {
+    display: none;
+}
+#modal-toggle-18:checked ~ .modal-backdrop-18 {
+    opacity: 0.8;
+    background-color: #000000;
+    z-index: 998;
+    transform: scale(1);
+}
+#modal-toggle-18:checked ~ .modal-content-18 {
+    opacity: 1;
+    background-color: #fff;
+    overflow-y: auto;
+    overflow-x: hidden;
+    pointer-events: auto;
+    cursor: auto;
+    z-index: 999;
+    transform: translateX(0%);
+}
+.tabs-18 {
+    display: block;
+    flex-wrap: wrap;
+    margin: 10px 0;
+    text-align: center;
+    justify-content: center;
+}
+.tabs-18 > .radio {
+    display: none;
+}
+.tabs-18>p{
+    margin: auto;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.tabs-18>p>span{
+    color: #FFA450;
+}
+.tabs-18 > .table-2 span {
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 48px;
+    color: #1A202C;
+    letter-spacing: -1px;
+}
+
+.tabs-18 .table-2{
+    margin-bottom: 25px;
+}
+.paragraph-18{
+    margin-top: 40px;
+}
+
+
+/************************************************************************************************************************************
+                                                  NUMERICAL ABILITY ENGLISH
+*************************************************************************************************************************************/
+.modal-content-19 {
+    opacity: 0;
+    position: fixed;
+    width: 650px;
+    height: 620px;
+    left: 24%;
+    top: 2%;  
+    background: #FAFAFA;
+    border-radius: 10px;
+    text-align: center;
+    /* padding: 15px; */
+    padding-top: 0px;
+    z-index: -1;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+.modal-backdrop-19 {
+    opacity: 0;
+    position: fixed;
+    padding: 15px;
+    padding-top: 50px;
+    z-index: -1;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.modal-backdrop-19 {
+    left: 0;
+    top: 0;
+    height: 100%;
+    height: 100vh;
+    width: 100%;
+    width: 100vw;
+}
+#modal-toggle-19 {
+    display: none;
+}
+#modal-toggle-19:checked ~ .modal-backdrop-19 {
+    opacity: 0.8;
+    background-color: #000000;
+    z-index: 998;
+    transform: scale(1);
+}
+#modal-toggle-19:checked ~ .modal-content-19 {
+    opacity: 1;
+    background-color: #fff;
+    overflow-y: auto;
+    overflow-x: hidden;
+    pointer-events: auto;
+    cursor: auto;
+    z-index: 999;
+    transform: translateX(0%);
+}
+.tabs-19 {
+    display: block;
+    flex-wrap: wrap;
+    margin: 10px 0;
+    text-align: center;
+    justify-content: center;
+}
+.tabs-19 > .radio {
+    display: none;
+}
+.tabs-19>p{
+    margin: auto;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.tabs-19>p>span{
+    color: #FFA450;
+}
+.tabs-19 > .table-2 span {
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 48px;
+    color: #1A202C;
+    letter-spacing: -1px;
+}
+
+.tabs-19 .table-2{
+    margin-bottom: 25px;
+}
+.paragraph-19{
+    margin-top: 40px;
+}
+
+/************************************************************************************************************************************
+                                                  NUMERICAL ABILITY MALAYALAM
+*************************************************************************************************************************************/
+.modal-content-20 {
+    opacity: 0;
+    position: fixed;
+    width: 650px;
+    height: 620px;
+    left: 24%;
+    top: 2%;  
+    background: #FAFAFA;
+    border-radius: 10px;
+    text-align: center;
+    /* padding: 15px; */
+    padding-top: 0px;
+    z-index: -1;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+.modal-backdrop-20 {
+    opacity: 0;
+    position: fixed;
+    padding: 15px;
+    padding-top: 50px;
+    z-index: -1;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.modal-backdrop-20 {
+    left: 0;
+    top: 0;
+    height: 100%;
+    height: 100vh;
+    width: 100%;
+    width: 100vw;
+}
+#modal-toggle-20 {
+    display: none;
+}
+#modal-toggle-20:checked ~ .modal-backdrop-20 {
+    opacity: 0.8;
+    background-color: #000000;
+    z-index: 998;
+    transform: scale(1);
+}
+#modal-toggle-20:checked ~ .modal-content-20 {
+    opacity: 1;
+    background-color: #fff;
+    overflow-y: auto;
+    overflow-x: hidden;
+    pointer-events: auto;
+    cursor: auto;
+    z-index: 999;
+    transform: translateX(0%);
+}
+.tabs-20 {
+    display: block;
+    flex-wrap: wrap;
+    margin: 10px 0;
+    text-align: center;
+    justify-content: center;
+}
+.tabs-20 > .radio {
+    display: none;
+}
+.tabs-20>p{
+    margin: auto;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.tabs-20>p>span{
+    color: #FFA450;
+}
+.tabs-20 > .table-2 span {
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 48px;
+    color: #1A202C;
+    letter-spacing: -1px;
+}
+
+.tabs-20 .table-2{
+    margin-bottom: 25px;
+}
+.paragraph-20{
+    margin-top: 40px;
+}
+
+
+/************************************************************************************************************************************
+                                                  PERCEPTUAL SPEED AND ACCURACY ENGLISH
+*************************************************************************************************************************************/
+.modal-content-21 {
+    opacity: 0;
+    position: fixed;
+    width: 650px;
+    height: 620px;
+    left: 24%;
+    top: 2%;  
+    background: #FAFAFA;
+    border-radius: 10px;
+    text-align: center;
+    /* padding: 15px; */
+    padding-top: 0px;
+    z-index: -1;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+.modal-backdrop-21 {
+    opacity: 0;
+    position: fixed;
+    padding: 15px;
+    padding-top: 50px;
+    z-index: -1;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.modal-backdrop-21 {
+    left: 0;
+    top: 0;
+    height: 100%;
+    height: 100vh;
+    width: 100%;
+    width: 100vw;
+}
+#modal-toggle-21 {
+    display: none;
+}
+#modal-toggle-21:checked ~ .modal-backdrop-21 {
+    opacity: 0.8;
+    background-color: #000000;
+    z-index: 998;
+    transform: scale(1);
+}
+#modal-toggle-21:checked ~ .modal-content-21 {
+    opacity: 1;
+    background-color: #fff;
+    overflow-y: auto;
+    overflow-x: hidden;
+    pointer-events: auto;
+    cursor: auto;
+    z-index: 999;
+    transform: translateX(0%);
+}
+.tabs-21 {
+    display: block;
+    flex-wrap: wrap;
+    margin: 10px 0;
+    text-align: center;
+    justify-content: center;
+}
+.tabs-21 > .radio {
+    display: none;
+}
+.tabs-21>p{
+    margin: auto;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.tabs-21>p>span{
+    color: #FFA450;
+}
+.tabs-21 > .table-2 span {
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 48px;
+    color: #1A202C;
+    letter-spacing: -1px;
+}
+
+.tabs-21 .table-2{
+    margin-bottom: 25px;
+}
+.paragraph-21{
+    margin-top: 40px;
+}
+
+/************************************************************************************************************************************
+                                                  PERCEPTUAL SPEED AND ACCURACY MALAYALAM
+*************************************************************************************************************************************/
+.modal-content-22 {
+    opacity: 0;
+    position: fixed;
+    width: 650px;
+    height: 620px;
+    left: 24%;
+    top: 2%;  
+    background: #FAFAFA;
+    border-radius: 10px;
+    text-align: center;
+    /* padding: 15px; */
+    padding-top: 0px;
+    z-index: -1;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+.modal-backdrop-22 {
+    opacity: 0;
+    position: fixed;
+    padding: 15px;
+    padding-top: 50px;
+    z-index: -1;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.modal-backdrop-22 {
+    left: 0;
+    top: 0;
+    height: 100%;
+    height: 100vh;
+    width: 100%;
+    width: 100vw;
+}
+#modal-toggle-22 {
+    display: none;
+}
+#modal-toggle-22:checked ~ .modal-backdrop-22 {
+    opacity: 0.8;
+    background-color: #000000;
+    z-index: 998;
+    transform: scale(1);
+}
+#modal-toggle-22:checked ~ .modal-content-22 {
+    opacity: 1;
+    background-color: #fff;
+    overflow-y: auto;
+    overflow-x: hidden;
+    pointer-events: auto;
+    cursor: auto;
+    z-index: 999;
+    transform: translateX(0%);
+}
+.tabs-22 {
+    display: block;
+    flex-wrap: wrap;
+    margin: 10px 0;
+    text-align: center;
+    justify-content: center;
+}
+.tabs-22 > .radio {
+    display: none;
+}
+.tabs-22>p{
+    margin: auto;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.tabs-22>p>span{
+    color: #FFA450;
+}
+.tabs-22 > .table-2 span {
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 48px;
+    color: #1A202C;
+    letter-spacing: -1px;
+}
+
+.tabs-22 .table-2{
+    margin-bottom: 25px;
+}
+.paragraph-22{
+    margin-top: 40px;
+}
+
+
+/************************************************************************************************************************************
+                                                  SPATIAL ABILITY ENGLISH
+*************************************************************************************************************************************/
+.modal-content-23 {
+    opacity: 0;
+    position: fixed;
+    width: 650px;
+    height: 620px;
+    left: 24%;
+    top: 2%;  
+    background: #FAFAFA;
+    border-radius: 10px;
+    text-align: center;
+    /* padding: 15px; */
+    padding-top: 0px;
+    z-index: -1;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+.modal-backdrop-23 {
+    opacity: 0;
+    position: fixed;
+    padding: 15px;
+    padding-top: 50px;
+    z-index: -1;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.modal-backdrop-23 {
+    left: 0;
+    top: 0;
+    height: 100%;
+    height: 100vh;
+    width: 100%;
+    width: 100vw;
+}
+#modal-toggle-23 {
+    display: none;
+}
+#modal-toggle-23:checked ~ .modal-backdrop-23 {
+    opacity: 0.8;
+    background-color: #000000;
+    z-index: 998;
+    transform: scale(1);
+}
+#modal-toggle-23:checked ~ .modal-content-23 {
+    opacity: 1;
+    background-color: #fff;
+    overflow-y: auto;
+    overflow-x: hidden;
+    pointer-events: auto;
+    cursor: auto;
+    z-index: 999;
+    transform: translateX(0%);
+}
+.tabs-23 {
+    display: block;
+    flex-wrap: wrap;
+    margin: 10px 0;
+    text-align: center;
+    justify-content: center;
+}
+.tabs-23 > .radio {
+    display: none;
+}
+.tabs-23>p{
+    margin: auto;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.tabs-23>p>span{
+    color: #FFA450;
+}
+.tabs-23 > .table-2 span {
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 48px;
+    color: #1A202C;
+    letter-spacing: -1px;
+}
+
+.tabs-23 .table-2{
+    margin-bottom: 25px;
+}
+.paragraph-23{
+    margin-top: 40px;
+}
+
+/************************************************************************************************************************************
+                                                  SPATIAL ABILITY MALAYALAM
+*************************************************************************************************************************************/
+.modal-content-24 {
+    opacity: 0;
+    position: fixed;
+    width: 650px;
+    height: 620px;
+    left: 24%;
+    top: 2%;  
+    background: #FAFAFA;
+    border-radius: 10px;
+    text-align: center;
+    /* padding: 15px; */
+    padding-top: 0px;
+    z-index: -1;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+.modal-backdrop-24 {
+    opacity: 0;
+    position: fixed;
+    padding: 15px;
+    padding-top: 50px;
+    z-index: -1;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.modal-backdrop-24 {
+    left: 0;
+    top: 0;
+    height: 100%;
+    height: 100vh;
+    width: 100%;
+    width: 100vw;
+}
+#modal-toggle-24 {
+    display: none;
+}
+#modal-toggle-24:checked ~ .modal-backdrop-24 {
+    opacity: 0.8;
+    background-color: #000000;
+    z-index: 998;
+    transform: scale(1);
+}
+#modal-toggle-24:checked ~ .modal-content-24 {
+    opacity: 1;
+    background-color: #fff;
+    overflow-y: auto;
+    overflow-x: hidden;
+    pointer-events: auto;
+    cursor: auto;
+    z-index: 999;
+    transform: translateX(0%);
+}
+.tabs-24 {
+    display: block;
+    flex-wrap: wrap;
+    margin: 10px 0;
+    text-align: center;
+    justify-content: center;
+}
+.tabs-24 > .radio {
+    display: none;
+}
+.tabs-24>p{
+    margin: auto;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.tabs-24>p>span{
+    color: #FFA450;
+}
+.tabs-24 > .table-2 span {
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 48px;
+    color: #1A202C;
+    letter-spacing: -1px;
+}
+
+.tabs-24 .table-2{
+    margin-bottom: 25px;
+}
+.paragraph-24{
+    margin-top: 40px;
+}
+
+
+/************************************************************************************************************************************
+                                                  VERBAL ABILITY PART 1 ENGLISH
+*************************************************************************************************************************************/
+.modal-content-26 {
+    opacity: 0;
+    position: fixed;
+    width: 650px;
+    height: 620px;
+    left: 24%;
+    top: 2%;  
+    background: #FAFAFA;
+    border-radius: 10px;
+    text-align: center;
+    /* padding: 15px; */
+    padding-top: 0px;
+    z-index: -1;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+.modal-backdrop-26 {
+    opacity: 0;
+    position: fixed;
+    padding: 15px;
+    padding-top: 50px;
+    z-index: -1;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.modal-backdrop-26 {
+    left: 0;
+    top: 0;
+    height: 100%;
+    height: 100vh;
+    width: 100%;
+    width: 100vw;
+}
+#modal-toggle-26 {
+    display: none;
+}
+#modal-toggle-26:checked ~ .modal-backdrop-26 {
+    opacity: 0.8;
+    background-color: #000000;
+    z-index: 998;
+    transform: scale(1);
+}
+#modal-toggle-26:checked ~ .modal-content-26 {
+    opacity: 1;
+    background-color: #fff;
+    overflow-y: auto;
+    overflow-x: hidden;
+    pointer-events: auto;
+    cursor: auto;
+    z-index: 999;
+    transform: translateX(0%);
+}
+.tabs-26 {
+    display: block;
+    flex-wrap: wrap;
+    margin: 10px 0;
+    text-align: center;
+    justify-content: center;
+}
+.tabs-26 > .radio {
+    display: none;
+}
+.tabs-26>p{
+    margin: auto;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.tabs-26>p>span{
+    color: #FFA450;
+}
+.tabs-26 > .table-2 span {
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 48px;
+    color: #1A202C;
+    letter-spacing: -1px;
+}
+
+.tabs-26 .table-2{
+    margin-bottom: 25px;
+}
+.paragraph-26{
+    margin-top: 40px;
+}
+
+
+/************************************************************************************************************************************
+                                                  VERBAL ABILITY PART 1 ENGLISH
+*************************************************************************************************************************************/
+.modal-content-28 {
+    opacity: 0;
+    position: fixed;
+    width: 650px;
+    height: 620px;
+    left: 24%;
+    top: 2%;  
+    background: #FAFAFA;
+    border-radius: 10px;
+    text-align: center;
+    /* padding: 15px; */
+    padding-top: 0px;
+    z-index: -1;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+.modal-backdrop-28 {
+    opacity: 0;
+    position: fixed;
+    padding: 15px;
+    padding-top: 50px;
+    z-index: -1;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.modal-backdrop-28 {
+    left: 0;
+    top: 0;
+    height: 100%;
+    height: 100vh;
+    width: 100%;
+    width: 100vw;
+}
+#modal-toggle-28 {
+    display: none;
+}
+#modal-toggle-28:checked ~ .modal-backdrop-28 {
+    opacity: 0.8;
+    background-color: #000000;
+    z-index: 998;
+    transform: scale(1);
+}
+#modal-toggle-28:checked ~ .modal-content-28 {
+    opacity: 1;
+    background-color: #fff;
+    overflow-y: auto;
+    overflow-x: hidden;
+    pointer-events: auto;
+    cursor: auto;
+    z-index: 999;
+    transform: translateX(0%);
+}
+.tabs-28 {
+    display: block;
+    flex-wrap: wrap;
+    margin: 10px 0;
+    text-align: center;
+    justify-content: center;
+}
+.tabs-28 > .radio {
+    display: none;
+}
+.tabs-28>p{
+    margin: auto;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.tabs-28>p>span{
+    color: #FFA450;
+}
+.tabs-28 > .table-2 span {
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 48px;
+    color: #1A202C;
+    letter-spacing: -1px;
+}
+
+.tabs-28 .table-2{
+    margin-bottom: 25px;
+}
+.paragraph-28{
+    margin-top: 40px;
+}
+
+/************************************************************************************************************************************
+                                                  VERBAL ABILITY INSTRUCTIONS MALAYALAM
+*************************************************************************************************************************************/
+.modal-content-27 {
+    opacity: 0;
+    position: fixed;
+    width: 650px;
+    height: 620px;
+    left: 24%;
+    top: 2%;  
+    background: #FAFAFA;
+    border-radius: 10px;
+    text-align: center;
+    /* padding: 15px; */
+    padding-top: 0px;
+    z-index: -1;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+.modal-backdrop-27 {
+    opacity: 0;
+    position: fixed;
+    padding: 15px;
+    padding-top: 50px;
+    z-index: -1;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.modal-backdrop-27 {
+    left: 0;
+    top: 0;
+    height: 100%;
+    height: 100vh;
+    width: 100%;
+    width: 100vw;
+}
+#modal-toggle-27 {
+    display: none;
+}
+#modal-toggle-27:checked ~ .modal-backdrop-27 {
+    opacity: 0.8;
+    background-color: #000000;
+    z-index: 998;
+    transform: scale(1);
+}
+#modal-toggle-27:checked ~ .modal-content-27 {
+    opacity: 1;
+    background-color: #fff;
+    overflow-y: auto;
+    overflow-x: hidden;
+    pointer-events: auto;
+    cursor: auto;
+    z-index: 999;
+    transform: translateX(0%);
+}
+.tabs-27 {
+    display: block;
+    flex-wrap: wrap;
+    margin: 10px 0;
+    text-align: center;
+    justify-content: center;
+}
+.tabs-27 > .radio {
+    display: none;
+}
+.tabs-27>p{
+    margin: auto;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.tabs-27>p>span{
+    color: #FFA450;
+}
+.tabs-27 > .table-2 span {
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 48px;
+    color: #1A202C;
+    letter-spacing: -1px;
+}
+
+.tabs-27 .table-2{
+    margin-bottom: 25px;
+}
+.paragraph-27{
+    margin-top: 40px;
+}
+
+
+/* Media Query */
+
+@media (max-width: 600px) {
+    #modal-toggle:checked ~ .modal-backdrop {
+        opacity: 0;
+    }
+    .modal-content {
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100vw;
+    }
+    .tabs>img{
+        left: 190px;
+    }
+    .tabs > .table-2 span {
+        margin-left: 35px;
+    }
+}
+
+/* Media Query */
+/*Popup Ends*/
+
+/* Media Query */
+@media (max-width: 1025px){
+    /*Progress Button*/
+    .btn1{
+        padding: 10px 15px;
+    }
+    /* Image Based Answers */
+    .btn2{
+        padding: 20px 15px;
+    }
+}
+@media (max-width: 769px){
+    /* Save Progress Button */
+    .saveProgress .popupButton{
+        padding: 12px 12px;
+        font-size: 14px;
+        margin-left: 10px;
+    }
+    /* Time Remaining */
+    .timerBased span{
+        display: block;
+    }
+    /* Assesment Progress h3 */
+    .assesmentProgress h3{
+        line-height: 20px;
+    }
+    /* View Instructions */
+    .viewInstructions{
+        margin-top: 50px;
+    }
+    /* Image Based Answers */
+    .imageBasedAnswers2 {
+        height: 150px;
+        width: 150px;
+    }
+    .btn2 {
+        padding: 15px 15px;
+    }
+    /* Mediaquery for secondary progress bar */
+    .heroProgress-1 {
+        padding: 60px 60px;
+    }
+
+    .timerBased-1{
+        display: block; /*none for 1st Assessment Page*/
+        color: #FFFFFF;
+        margin-top: -15px;
+        margin-bottom: 40px;
+    }
+    .timerBased-1 span{
+        color: #f3a1b3;
+    }
+
+    .assesmentProgress-1 {
+        margin-bottom: 50px;
+    }
+
+    .assesmentProgress-1 h3 {
+        font-family: "Inter", sans-serif;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 15px;
+        letter-spacing: 2px;
+        color: #fafafa;
+    }
+
+    .progressCircleWrap-1 {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+
+    .progressCircle-1 {
+        width: 174.3px;
+        height: 174.3px;
+        border-radius: 100px;
+        background-color: #ffffff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .progressCircle-1 h3 {
+        font-family: "Inter", sans-serif;
+        font-weight: normal;
+        font-size: 40px;
+        line-height: 48px;
+        color: #1d1d1d;
+    }
+
+    .questions2-1 {
+        margin-bottom: 50px;
+    }
+
+    .questions2-1 p {
+        font-family: "Inter", sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 29px;
+        letter-spacing: -0.04em;
+        color: #fafafa;
+    }
+
+    .commentProgress-1 {
+        margin-bottom: 50px;
+    }
+
+    .commentProgress-1 p {
+        font-family: "Inter", sans-serif;
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 48px;
+        letter-spacing: -2px;
+        color: #fafafa;
+    }
+
+    .viewInstructions-mobile{
+        margin-top: 20px;
+    }
+
+    .viewInstructions-mobile label{
+        /* margin-top: 200px; */
+        font-family: "Inter", sans-serif;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 15px;
+        letter-spacing: 2px;
+        color: #ffa450;
+        cursor: pointer;
+    }
+
+    /* For secondary popup */
+    #modal-toggle-mobile {
+        display: none;
+    }
+    #modal-toggle-mobile:checked ~ .modal-backdrop {
+        opacity: 0.8;
+        background-color: #000000;
+        z-index: 998;
+        transform: scale(1);
+    }
+    .modal-content-mobile {
+        opacity: 0;
+        position: fixed;
+        /* width: 650px; */
+        width: 90%;
+        height: 620px;
+        /* left: 24%; */
+        left: 30px;
+        top: 2%;  
+        background: #FAFAFA;
+        border-radius: 10px;
+        text-align: center;
+        /* padding: 15px; */
+        padding-top: 0px;
+        z-index: -1;
+        overflow: hidden;
+        transition: all 0.3s ease-in-out;
+    }
+    #modal-toggle-mobile:checked ~ .modal-content-mobile {
+        opacity: 1;
+        background-color: #fff;
+        overflow-y: auto;
+        overflow-x: hidden;
+        pointer-events: auto;
+        cursor: auto;
+        z-index: 999;
+        transform: translateX(0%);
+    }
+    .blueTop{
+        background-color: #464BCF;
+        width: 100%;
+        height: 62.14px;
+        margin-bottom: 60px;
+    }
+    .tabs-mobile {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 10px 0;
+        text-align: center;
+        justify-content: center;
+    }
+    .tabs-mobile > .radio {
+        display: none;
+    }
+    .tabs-mobile>p{
+        margin: auto;
+        font-weight: 500;
+        font-size: 20px;
+    }
+    .tabs-mobile>p>span{
+        color: #FFA450;
+    }
+    .tabs-mobile > .table-2 span {
+        font-family: Inter;
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 48px;
+        color: #1A202C;
+        letter-spacing: -1px;
+    }
+    .tabs-mobile > .table-2{
+        margin-bottom: 25px;
+    }
+    .paragraph-mobile{
+        margin-top: 40px;
+    }
+    .instructionButton{
+        width: 346px;
+        height: 55px;
+        background: #414141;
+        border: 1px solid #D3D3D3;
+        box-sizing: border-box;
+        border-radius: 200px;
+        margin-top: 20px;
+        font-size: 16px;
+        line-height: 15px;
+        letter-spacing: 2px;
+        color: #ffffff;
+        cursor: pointer;
+    }
+
+    /* For secondary popup */
+
+    .heroProgressWrap{
+        display: none;
+    }
+    .heroProgressWrap-1{
+        display: flex;
+    }
+
+}
+
+@media (max-width: 600px){
+    .saveProgress{
+        display: block;
+    }
+}
+
+@media (max-width: 570px){
+    .navigation{
+        display: block;
+        align-items: center;
+    }
+    .assesmentWrap{
+        justify-content: flex-start;
+    }
+    .saveProgress{
+        text-align: center;
+    }
+    .heroQuestions1 {
+        width: 100%;
+        padding: 60px 20px;
+    }
+    .heroQuestions2 {
+        width: 100%;
+        padding: 60px 35px;
+    }
+    .heroQuestions3 {
+        width: 100%;
+        padding: 60px 35px;
+    }
+    .heroQuestions4 {
+        width: 100%;
+        padding: 60px 35px;
+    }
+    .heroQuestions5 {
+        width: 100%;
+        padding: 60px 35px;
+    }
+
+
+}
+
+
+
+table {
+    border-spacing: 0;
+    width: 100% !important;
+    margin-bottom: 1px;
+}
+th, td {
+    padding: 8px;
+    border-top: 1px solid rgb(255, 164, 80);
+    border-left: 1px solid rgb(255, 164, 80);
+    border-right: 1px solid rgb(255, 164, 80);
+    background-color: rgba(139, 137, 137, 0.459);
+}
+.completed{
+    background-color: #3e8e41;
+}
+.ongoing{
+    background-color: rgb(255, 191, 0);
+}
+
+
+/* New UI */
+.progressBar{
+    height: 40px;
+    width: 80%;
+    background-color: rgb(180, 180, 180);
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 0 20px;
+    font-weight: 500;
+}
+.percentage{
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    border: 2px solid #fff;
+    background-color: rgb(180, 180, 180);  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 50px;
+}
+.title{
+    text-align: center;
+}
+.question-progress{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.circle{
+    height: 25px;
+    width: 25px;
+    border-radius: 100%;
+    background-color: rgb(180, 180, 180);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    cursor: pointer;
+}
+/*.circle:nth-child(1){
+  background-color: black;
+}
+.circle:nth-child(2){
+  background-color: rgb(88, 88, 88);
+}*/
+.hr{
+    width: 80%;
+    height: 1px;
+    background-color: rgb(211, 211, 211);
+    margin: auto;
+    margin-top: 60px;
+}
+.instructions{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 30px !important;
+    margin: auto;
+    width: 70%;
+    height: 100px;
+    background-color: rgb(211, 211, 211);
+    /*  color: gray;*/
+}
+.instructions label{
+    cursor: pointer;
+    font-weight: 500;
+}
+.instructions label:hover{
+    color: #121212;
+}
+.translate-btn{
+    text-decoration: none;
+    background-color: rgb(201, 201, 201);
+    color: rgb(95, 95, 95);
+    padding: 5px 15px;
+    border-radius: 5px;
+    margin: 5px;
+}
+.translate-btn:hover{
+    color: #121212;
+}
+.submit{
+    padding: 10px 30px; 
+    font-size: 16px;
+    font-weight: 500;
+    background-color: gray;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.submit:hover{
+    background-color: #121212bb;
+}
+
+.modal-content-5 {
+    opacity: 0;
+    position: fixed;
+    /* width: 55%; */
+    width: 650px;
+    height: 500px;
+    left: 0;
+    right: 0;
+    top: 0;  
+    margin: 5% auto;
+    background: #FAFAFA;
+    border-radius: 10px;
+    text-align: center;
+    /* padding: 15px; */
+    padding-top: 0px;
+    padding-bottom: 20px;
+    z-index: -1;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+.modal-content-4 {
+    opacity: 0;
+    position: fixed;
+    /* width: 55%; */
+    width: 650px;
+    height: 500px;
+    left: 0;
+    right: 0;
+    top: 0;  
+    margin: 5% auto;
+    background: #FAFAFA;
+    border-radius: 10px;
+    text-align: center;
+    /* padding: 15px; */
+    padding-top: 0px;
+    padding-bottom: 20px;
+    z-index: -1;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Responsive */
+@media (max-width: 570px){
+    .progressBar{
+        height: auto;
+        flex-direction: column;
+        justify-content: center;
+        padding: 10px;
+    }
+    .percentage{
+        margin: 10px;
+    }
+}
+
+/*.logo {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}*/
+.logo-2 {
+/*    margin-left: -35px;*/
+    width: 100px;
+}
+/*@media (max-width: 542px)
+{
+    .logo-3 {
+        margin-left: 0;
+    }
+    header {
+        padding: 20px 30px;
+    }
+}
+@media (max-width: 376px){
+    .logo-2 {
+        margin-left: 0;
+    }
+}*/

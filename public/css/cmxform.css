@@ -1,0 +1,14 @@
+/**********************************
+
+Name: cmxform Styles
+
+***********************************/
+
+form.cmxform label.error, label.error {
+	/* remove the next line when you have trouble in IE6 with labels in list */
+	color: #FF3030;
+	font-size: 14px;
+        line-height: 24px;
+}
+div.error { display: none; }
+input.error,textarea.error,select.error { border: 1px solid #FF9A9A !important; }

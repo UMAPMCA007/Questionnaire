@@ -1,0 +1,239 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    font-family: "Inter", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+    /*    background: #ffffff url("resources/media/img/arch.svg") repeat-x 0 0;*/
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 50% 400px;
+}
+
+input:focus, select:focus {
+    outline: none !important;
+    box-shadow: 0 0 10px #719ECE;
+    border-color: #00ABBD !important;
+}
+
+header {
+    padding: 20px 60px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+.logo-1{
+    width: 124.8px;
+}
+.logo-2 {
+    margin-left: 5px;
+}
+.logo-3{
+    width: 60px;
+    margin-left: 10px;
+}
+
+.one {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parent {
+    background-color: #ffffff;
+    text-align: center;
+    padding: 20px 40px;
+    border: #ededed 0.4px solid;
+    border-radius: 10px;
+}
+
+.parent h1 {
+    font-family: inter, sans-serif;
+    font-size: 28px;
+    line-height: 34px;
+    font-weight: 500;
+}
+
+.parent a{
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+
+.parent p{
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.imgWrapperLeft>img{
+    width: 30%;
+    height: auto;
+    position: absolute;
+    left: 0;
+    bottom: -250px;
+}
+
+.imgWrapperRight>img{
+    width: 30%;
+    height: auto;
+    position: absolute;
+    right: 0;
+    bottom: -250px;
+}
+
+input[type=text],input[type=email],input[type=password]{
+    width: 21rem;
+    padding: 15px;
+    margin: 15px;
+    background: #FFFFFF;
+    border: 1px solid #D3D3D3;
+    box-sizing: border-box;
+    border-radius: 5px;
+    display: block;
+}
+
+select {
+    width: 21rem;
+    padding: 15px;
+    margin: 15px;
+    background: #FFFFFF;
+    border: 1px solid #D3D3D3;
+    box-sizing: border-box;
+    border-radius: 5px;
+    display: block;
+}
+
+.dummy-btn a{
+    color: #fff;
+    appearance: button;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.registerbtn{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 15px;
+    width: 363px;
+    height: 55px;
+    /*    
+    background: #C4C4C4;    
+    */
+    border: 1px solid #D3D3D3;
+    border-radius: 200px;
+    cursor: pointer;
+    color: #FFFFFF;
+    background: #414141;
+}
+
+/* Email Validation */
+.emailval p{
+    color: #FF3030;
+}
+
+.passval p{
+    color: #64AE49;
+    text-align: left;
+    margin-left: 15px;
+    margin-bottom: 40px;
+    font-size: 14px;
+    line-height: 15px;
+}
+
+.parentWrapper {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.logof-txt{
+    text-align: center;
+    font-weight: 500;
+}
+
+@media (max-width: 542px){
+    .parent {
+        padding: 0 10px;
+    }
+    .logo {
+        display: flex;
+        justify-content: space-between;
+    }
+    .logo-1 {
+        width: 100px;
+    }
+    .logo-2 {
+        width: 100px;
+    }
+    .parentWrapper {
+        justify-content: center;
+    }
+
+    .adminProfileWrapper {
+        margin-left: auto;
+    }
+}
+
+/*@media (max-width: 400px){
+    .logo{
+        flex-wrap: wrap;
+        margin-right: 0;
+    }
+}*/
+
+@media (max-width: 350px) {
+    input[type=text], input[type=email], input[type=password], select {
+        width: 90% !important;
+    }
+    .parent{
+        padding: 10px;
+    }
+    .registerbtn{
+        width: 90% !important;
+    }
+}
+
+@media (max-width: 600px) {
+    .imgWrapperLeft>img{
+        bottom: -305px;
+    }
+    .imgWrapperRight>img{
+        bottom: -305px;
+    }
+}
+
+.logo {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.logo-2 {
+    margin-left: -35px;
+    width: 100px;
+}
+@media (max-width: 542px)
+{
+    .logo-3 {
+        margin-left: 0;
+    }
+    header {
+        padding: 20px 30px;
+    }
+}
+@media (max-width: 376px){
+    .logo-2 {
+        margin-left: 0;
+    }
+}
