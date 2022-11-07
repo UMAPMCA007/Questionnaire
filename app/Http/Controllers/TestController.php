@@ -80,7 +80,7 @@ class TestController extends Controller
             $request = $client->request('POST', $url,['body'=> $body]);
                 
         }catch(\Exception $e){
-          dd($e->getMessage());
+          $e->getMessage();
         }
         
         Test::truncate();
