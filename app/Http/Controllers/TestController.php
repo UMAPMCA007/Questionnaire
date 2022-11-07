@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Assessment;
 use App\Models\Test;
 use Illuminate\Http\Request;
 
@@ -12,16 +13,21 @@ class TestController extends Controller
       public  $assessmentID = 104;
 
     public function index()
-    {
+    {   $subject= Assessment::all()->toArray();
         $client = new \GuzzleHttp\Client(['verify' =>false]);
         $response = $client->request('GET', 'https://assessment.dev.futuremug.com:8089/test/assessment/'.$this->username.'/'.$this->emailid.'/getdetails?assessment='.$this->assessmentID);
         $data = json_decode($response->getBody()->getContents(), true);       
         $data=$data['sub_sections'];
-        return view('assessment.index', compact('data'));
+        return view('assessment.index', compact('data','subject'));
     }
 
-    public function test($sessionID,$sessionName)
+    public function test($sessionID,$sessionName,$i)
     {
+        $subject=new Assessment();
+        $subject->section_id=$sessionID;
+        $subject->section_name=$sessionName;
+        $subject->i=$i;
+        $subject->save();
         $client = new \GuzzleHttp\Client(['verify' => false]);
         $response = $client->request('GET', 'https://assessment.dev.futuremug.com:8089/test/assessment/sections/'.$this->username.'/'.$this->assessmentID.'/questions?section='.$sessionName);
         $data = json_decode($response->getBody()->getContents(), true);
@@ -60,29 +66,26 @@ class TestController extends Controller
         $fullAnswer=[
             'answers'=>$answers,
             'assessmentid'=>$this->assessmentID,
+            'isDisqualified'=>"",
+            'reason'=>"",
+            'pageReloadCount'=>"",
             'sectionid'=>$sectionID,
         ];
-       
+         
+        $body=json_encode($fullAnswer);
        
         $client = new \GuzzleHttp\Client(['verify' =>false]);
         $url= 'https://assessment.dev.futuremug.com:8089/test/assessment/'.$this->username.'/'.$this->emailid.'/submit';
-        $body=json_encode($fullAnswer);
         try{
-            $response = $client->request('POST', $url,[
-
-                'headers' => [
-                    'Content-Type' => 'application/json',
-                    'Accept' => 'application/json',
-                ],
-                'body'=>$body
-            ]);
- 
+            $request = $client->request('POST', $url,['body'=> $body]);
+                
         }catch(\Exception $e){
-           dd($e->getMessage());
+          dd($e->getMessage());
         }
         
         Test::truncate();
         
+        return redirect()->route('assessment');
        
        
     }

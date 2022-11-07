@@ -264,10 +264,12 @@
                       "sectionID":sectionID,
                     },
                     success:function(response){
-                      console.log(response);
+                      //  how to redirect to assesment route
+                      window.location.href = "{{url('/assessment')}}";
+  
                     }
                   });
-                  // redirect to assignment page
+                  
                   
 
 
