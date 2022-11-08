@@ -54,11 +54,20 @@ class TestController extends Controller
 
     public function store(Request $request){
 
-        $test=new Test();
-        $test->qestion_id=$request->qid;
-        $test->answer_id=$request->cid;
-        $test->save();
+      $request->validate([
+            'qid' => 'required',
+            'cid' => 'required',
+        ]);
         
+        if($request->qid && $request->cid){
+            $test=new Test();
+            $test->qestion_id=$request->qid;
+            $test->answer_id=$request->cid;
+            $test->save();
+            return response()->json(['success'=>'Data is successfully added']);
+        }
+       
+       
 
     }
 

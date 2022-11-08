@@ -9,6 +9,12 @@
       </div>
   </div>
   <div class="text-center">
+    
+    @if (session('error'))
+      <div class=" col-md-6 offset-md-3 text-center alert alert-danger">
+        {{ session('error') }}
+      </div>
+    @endif
       <h3>Question 1</h3>
   </div> 
   <div id="progress_section" style="">
@@ -84,10 +90,10 @@
       var questions= <?php echo json_encode($questions); ?>;
       var sectionID = <?php echo json_encode($data); ?>;
       var sectionID = sectionID[0].sectionID;
-      //console.log(sectionID);
+      
       var questionLength = questions.length;
       questionLength= questionLength;
-     // console.log(questionLength);
+     
       var question=$('#quest2');
       var choice=$('#btn_choice');
       var ansered=$('#sec_ans_info');
@@ -199,7 +205,8 @@
                 });
                 i++; 
              }
-            
+           
+           
 
              $.ajax({
                     url:"{{url('/store')}}",
@@ -214,14 +221,14 @@
                   });
 
              if(questionLength==i){
-              
                 $('#next').text('submit');
                 $('#next').addClass('completed');
                  $('.completed').on('click',function(){
                       submit();
                      $(this).hide();
                  }); 
-             }  
+             }
+             choiceVal='';  
         });
         
       }
@@ -264,15 +271,33 @@
                       "sectionID":sectionID,
                     },
                     success:function(response){
-                      //  how to redirect to assesment route
+                      
                       window.location.href = "{{url('/assessment')}}";
   
                     }
                   });
                   
-                  
+              }
+              timer();
+              function timer(){
+                var timeleft = questionLength * 60;
+                var downloadTimer = setInterval(function(){
+                if(timeleft <= 0){
+                  clearInterval(downloadTimer);
+                  document.getElementById("pretty_qn_time").innerHTML = "Finished";
+                  window.location.href = "{{url('/assessment')}}";
+                } else {
+                  document.getElementById("pretty_qn_time").innerHTML = secondToMinute(timeleft) + " remaining";
+                }
+                timeleft -= 1;
+                }, 1000);
+              }
 
-
+              function secondToMinute(second){
+                var minute=second/60;
+                var min=parseInt(minute);
+                var sec=second%60;
+                return min+' Minute: '+sec+' Second'; 
               }
 
  });
