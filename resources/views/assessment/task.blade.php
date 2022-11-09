@@ -86,7 +86,9 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 <script>
+ 
  $(document).ready(function () {
+      
       var questions= <?php echo json_encode($questions); ?>;
       var sectionID = <?php echo json_encode($data); ?>;
       var sectionID = sectionID[0].sectionID;
@@ -108,7 +110,8 @@
       question.attr('value',qValue);
       $('#submit').hide();
       
-
+      
+      
       $.ajaxSetup({
       headers: {
           'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
@@ -300,8 +303,10 @@
                 return min+' Minute: '+sec+' Second'; 
               }
 
+              
  });
-  
+ 
 </script>
+
 @endsection
 

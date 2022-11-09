@@ -39,25 +39,26 @@
 </div>
 @endsection
  @section('js')
-    <script src="{{ asset('js/sweetalert2.js')}}"></script>
-    <script src="{{ asset('js/assesment-new.js') }}"></script>
+    {{-- <script src="{{ asset('js/sweetalert2.js')}}"></script>
+    <script src="{{ asset('js/assesment-new.js') }}"></script> --}}
     {{-- <script src="{{ asset('js/test.js') }}"></script> --}}
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
    <script>
+    
         $(document).ready(function () {
             var data=<?php echo json_encode($data); ?>;
             var subject=<?php echo json_encode($subject); ?>;
             
-            $('#btnStart').on('click',function(e){
-                e.preventDefault();
-                var k=0;
-                var key=$(this).attr('key');
+            // $('#btnStart').on('click',function(e){
+            //     e.preventDefault();
+            //     var k=0;
+            //     var key=$(this).attr('key');
                
-                if($key!=k){
-                    $(this).attr('href',javascript:void(0));
-                    $('#error').html('Please complete previous section');
-                }
-            })
+            //     if($key!=k){
+            //         $(this).attr('href',javascript:void(0));
+            //         $('#error').html('Please complete previous section');
+            //     }
+            // })
             
             
             // $.each(data, function (i, value) {
